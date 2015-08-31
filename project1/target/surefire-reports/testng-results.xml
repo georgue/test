@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Tests" duration-ms="5708" started-at="2015-08-30T18:27:25Z" finished-at="2015-08-30T18:27:31Z">
+  <suite name="Tests" duration-ms="14030" started-at="2015-08-31T19:38:52Z" finished-at="2015-08-31T19:39:06Z">
     <groups>
     </groups>
-    <test name="Test1" duration-ms="5708" started-at="2015-08-30T18:27:25Z" finished-at="2015-08-30T18:27:31Z">
+    <test name="Test1" duration-ms="14030" started-at="2015-08-31T19:38:52Z" finished-at="2015-08-31T19:39:06Z">
       <class name="ru.st.selenium.logintest">
-        <test-method status="PASS" signature="init()[pri:0, instance:ru.st.selenium.logintest@96532d6]" name="init" is-config="true" duration-ms="3885" started-at="2015-08-30T21:27:25Z" finished-at="2015-08-30T21:27:29Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:ru.st.selenium.logintest@96532d6]" name="init" is-config="true" duration-ms="11204" started-at="2015-08-31T22:38:52Z" finished-at="2015-08-31T22:39:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="testUntitled()[pri:0, instance:ru.st.selenium.logintest@96532d6]" name="testUntitled" duration-ms="1807" started-at="2015-08-30T21:27:29Z" finished-at="2015-08-30T21:27:31Z">
+        <test-method status="PASS" signature="testUntitled()[pri:0, instance:ru.st.selenium.logintest@96532d6]" name="testUntitled" duration-ms="2814" started-at="2015-08-31T22:39:04Z" finished-at="2015-08-31T22:39:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUntitled -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:ru.st.selenium.logintest@96532d6]" name="tearDown" is-config="true" duration-ms="107" started-at="2015-08-30T21:27:31Z" finished-at="2015-08-30T21:27:31Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:ru.st.selenium.logintest@96532d6]" name="tearDown" is-config="true" duration-ms="1878" started-at="2015-08-31T22:39:06Z" finished-at="2015-08-31T22:39:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
