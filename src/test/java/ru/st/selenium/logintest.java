@@ -9,7 +9,7 @@ import static org.hamcrest.CoreMatchers.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
-
+import org.openqa.selenium.*;
 
 public class logintest extends ru.st.selenium.pages.TestBase {
   private boolean acceptNextAlert = true;
@@ -22,7 +22,7 @@ public class logintest extends ru.st.selenium.pages.TestBase {
     driver.findElement(By.id("username")).sendKeys("admin");
     driver.findElement(By.name("password")).clear();
     driver.findElement(By.name("password")).sendKeys("admin");
-    driver.findElement(By.name("submit")).click();
+    driver.findElement(By.name("submit")).click();    
   }
 
   private boolean isElementPresent(By by) {
