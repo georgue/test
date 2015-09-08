@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="31148" started-at="2015-09-07T20:42:58Z" finished-at="2015-09-07T20:43:29Z">
+  <suite name="Default suite" duration-ms="37163" started-at="2015-09-08T20:02:58Z" finished-at="2015-09-08T20:03:35Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="31148" started-at="2015-09-07T20:42:58Z" finished-at="2015-09-07T20:43:29Z">
-      <class name="ru.st.selenium.RemoveDisctiptionFilm">
-        <test-method status="PASS" signature="init()[pri:0, instance:ru.st.selenium.RemoveDisctiptionFilm@7dc36524]" name="init" is-config="true" duration-ms="27526" started-at="2015-09-07T23:42:58Z" finished-at="2015-09-07T23:43:26Z">
+    <test name="Default test" duration-ms="37163" started-at="2015-09-08T20:02:58Z" finished-at="2015-09-08T20:03:35Z">
+      <class name="ru.st.selenium.CreateDiscriptionFilmWithOutYeartest">
+        <test-method status="PASS" signature="init()[pri:0, instance:ru.st.selenium.CreateDiscriptionFilmWithOutYeartest@7dc36524]" name="init" is-config="true" duration-ms="23782" started-at="2015-09-08T23:02:58Z" finished-at="2015-09-08T23:03:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="testUntitled()[pri:0, instance:ru.st.selenium.RemoveDisctiptionFilm@7dc36524]" name="testUntitled" duration-ms="3602" started-at="2015-09-07T23:43:26Z" finished-at="2015-09-07T23:43:29Z">
+        <test-method status="PASS" signature="testUntitled()[pri:0, instance:ru.st.selenium.CreateDiscriptionFilmWithOutYeartest@7dc36524]" name="testUntitled" duration-ms="13215" started-at="2015-09-08T23:03:21Z" finished-at="2015-09-08T23:03:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUntitled -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:ru.st.selenium.RemoveDisctiptionFilm@7dc36524]" name="tearDown" is-config="true" duration-ms="6327" started-at="2015-09-07T23:43:29Z" finished-at="2015-09-07T23:43:36Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:ru.st.selenium.CreateDiscriptionFilmWithOutYeartest@7dc36524]" name="tearDown" is-config="true" duration-ms="0" started-at="2015-09-08T23:03:35Z" finished-at="2015-09-08T23:03:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- ru.st.selenium.RemoveDisctiptionFilm -->
+      </class> <!-- ru.st.selenium.CreateDiscriptionFilmWithOutYeartest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

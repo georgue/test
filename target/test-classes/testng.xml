@@ -3,9 +3,12 @@
 <suite name="Tests" verbose="5" data-provider-thread-count="1">
 	<test name="Test1">
 		<parameter name="path" value="/"/>
-		<classes>
-		    <!--<class name="ru.st.selenium.logintest"/>-->
+		<classes>		    
 		    <class name="ru.st.selenium.CreateDiscriptionFilmtest"></class>
+		    <class name="ru.st.selenium.CreateDiscriptionFilmWithOutTitletest"></class>
+		    <class name="ru.st.selenium.CreateDiscriptionFilmWithOutYeartest"></class>
+		    <class name="ru.st.selenium.RemoveDisctiptionFilm"></class>
+		    
 		</classes>
 	</test>  
 </suite>

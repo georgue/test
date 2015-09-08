@@ -1,8 +1,12 @@
 package ru.st.selenium;
 import static org.testng.AssertJUnit.assertEquals;
 import org.testng.*;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Capabilities;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -13,18 +17,24 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import com.thoughtworks.selenium.webdriven.commands.IsTextPresent;
 
+import ru.st.selenium.pages.TestBase;
+import ru.stqa.selenium.factory.WebDriverFactory;
+
 import com.thoughtworks.selenium.webdriven.SeleneseCommand;
 
 
-public class RemoveDisctiptionFilm extends logintest  {	
+public class RemoveDisctiptionFilm extends CreateDiscriptionFilmtest{	
 		@Test
 		public void testUntitled(){
-			driver.get(baseUrl + "/php4dvd/");
-		    driver.findElement(By.id("username")).clear();
-		    driver.findElement(By.id("username")).sendKeys("admin");
-		    driver.findElement(By.name("password")).clear();
-		    driver.findElement(By.name("password")).sendKeys("admin");
-		    driver.findElement(By.name("submit")).click();
+			
+			driver.get(baseUrl + "/php4dvd/");	    
+			
+		    WebElement user = driver.findElement(By.id("username"));
+		    user.sendKeys("admin");
+		    WebElement pass = driver.findElement(By.name("password"));
+		    pass.sendKeys("admin");
+		    WebElement submit = driver.findElement(By.name("submit"));
+		    submit.click();
 		    
 			
 			WebElement add_movie_buttom = driver.findElement(By.xpath("//div[@id=\"content\"]/*/*/*[2]/*/*/*/a[@href]"));
@@ -44,13 +54,17 @@ public class RemoveDisctiptionFilm extends logintest  {
 			
 			seen_No_Checkbox.submit();
 			
-			WebElement remove_buttom = driver.findElement(By.xpath("//*[@id=\"content\"]/section/nav/ul/li[4]/div"));
-			remove_buttom.click();
+			WebElement btn_remove = driver.findElement(By.xpath("/html/body/div/div/div/section/nav/ul/li[4]/div/div/a"));
+			btn_remove.click();
+			Alert alert = driver.switchTo().alert();
+			alert.accept();			
 			
-			WebElement findText = driver.findElement(By.xpath("//*[@id=\"movie\"]/div[2]/h2"));
+			
+			WebElement findText = driver.findElement(By.xpath("//*[@id=\"results\"]/div[1]"));
 			String str = findText.getText();
 
-			assertEquals(str, "Терминатор (2014)");
+			assertEquals(str, "No movies where found.");
+			
 			
 			
 			
