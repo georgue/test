@@ -3,11 +3,16 @@ import ru.st.selenium.pages.TestBase;
 
 import static org.testng.AssertJUnit.assertEquals;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 import ru.stqa.selenium.factory.WebDriverFactory;
@@ -15,8 +20,10 @@ import ru.stqa.selenium.factory.WebDriverFactory;
 public class CreateDiscriptionFilmWithOutTitletest extends CreateDiscriptionFilmtest {
 	@Test
 	public void testUntitled() {
+		WebDriver driver = new FirefoxDriver();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.get(baseUrl + "/php4dvd/");
 		
-		driver.get(baseUrl + "/php4dvd/");	    
 		
 	    WebElement user = driver.findElement(By.id("username"));
 	    user.sendKeys("admin");
@@ -48,7 +55,7 @@ public class CreateDiscriptionFilmWithOutTitletest extends CreateDiscriptionFilm
 	
 	
 	assertEquals(str, "This field is required");
-	
+		}
 	}
 
-}
+

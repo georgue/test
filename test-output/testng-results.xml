@@ -1,25 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="37163" started-at="2015-09-08T20:02:58Z" finished-at="2015-09-08T20:03:35Z">
+  <suite name="Tests" duration-ms="153761" started-at="2015-09-09T20:23:15Z" finished-at="2015-09-09T20:25:49Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="37163" started-at="2015-09-08T20:02:58Z" finished-at="2015-09-08T20:03:35Z">
+    <test name="Test1" duration-ms="153761" started-at="2015-09-09T20:23:15Z" finished-at="2015-09-09T20:25:49Z">
       <class name="ru.st.selenium.CreateDiscriptionFilmWithOutYeartest">
-        <test-method status="PASS" signature="init()[pri:0, instance:ru.st.selenium.CreateDiscriptionFilmWithOutYeartest@7dc36524]" name="init" is-config="true" duration-ms="23782" started-at="2015-09-08T23:02:58Z" finished-at="2015-09-08T23:03:21Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:ru.st.selenium.CreateDiscriptionFilmWithOutYeartest@3ac3fd8b]" name="init" is-config="true" duration-ms="27" started-at="2015-09-09T23:24:34Z" finished-at="2015-09-09T23:24:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="testUntitled()[pri:0, instance:ru.st.selenium.CreateDiscriptionFilmWithOutYeartest@7dc36524]" name="testUntitled" duration-ms="13215" started-at="2015-09-08T23:03:21Z" finished-at="2015-09-08T23:03:35Z">
+        <test-method status="PASS" signature="testUntitled()[pri:0, instance:ru.st.selenium.CreateDiscriptionFilmWithOutYeartest@3ac3fd8b]" name="testUntitled" duration-ms="37306" started-at="2015-09-09T23:24:34Z" finished-at="2015-09-09T23:25:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUntitled -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:ru.st.selenium.CreateDiscriptionFilmWithOutYeartest@7dc36524]" name="tearDown" is-config="true" duration-ms="0" started-at="2015-09-08T23:03:35Z" finished-at="2015-09-08T23:03:35Z">
+      </class> <!-- ru.st.selenium.CreateDiscriptionFilmWithOutYeartest -->
+      <class name="ru.st.selenium.CreateDiscriptionFilmtest">
+        <test-method status="PASS" signature="init()[pri:0, instance:ru.st.selenium.CreateDiscriptionFilmtest@5594a1b5]" name="init" is-config="true" duration-ms="45016" started-at="2015-09-09T23:23:15Z" finished-at="2015-09-09T23:24:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="testUntitled()[pri:0, instance:ru.st.selenium.CreateDiscriptionFilmtest@5594a1b5]" name="testUntitled" duration-ms="4297" started-at="2015-09-09T23:24:00Z" finished-at="2015-09-09T23:24:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUntitled -->
+      </class> <!-- ru.st.selenium.CreateDiscriptionFilmtest -->
+      <class name="ru.st.selenium.CreateDiscriptionFilmWithOutTitletest">
+        <test-method status="PASS" signature="init()[pri:0, instance:ru.st.selenium.CreateDiscriptionFilmWithOutTitletest@1b0375b3]" name="init" is-config="true" duration-ms="470" started-at="2015-09-09T23:24:04Z" finished-at="2015-09-09T23:24:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="testUntitled()[pri:0, instance:ru.st.selenium.CreateDiscriptionFilmWithOutTitletest@1b0375b3]" name="testUntitled" duration-ms="28901" started-at="2015-09-09T23:24:05Z" finished-at="2015-09-09T23:24:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUntitled -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:ru.st.selenium.CreateDiscriptionFilmWithOutTitletest@1b0375b3]" name="tearDown" is-config="true" duration-ms="12870" started-at="2015-09-09T23:25:49Z" finished-at="2015-09-09T23:26:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- ru.st.selenium.CreateDiscriptionFilmWithOutYeartest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- ru.st.selenium.CreateDiscriptionFilmWithOutTitletest -->
+      <class name="ru.st.selenium.RemoveDisctiptionFilm">
+        <test-method status="PASS" signature="init()[pri:0, instance:ru.st.selenium.RemoveDisctiptionFilm@6a5fc7f7]" name="init" is-config="true" duration-ms="24" started-at="2015-09-09T23:25:11Z" finished-at="2015-09-09T23:25:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="testUntitled()[pri:0, instance:ru.st.selenium.RemoveDisctiptionFilm@6a5fc7f7]" name="testUntitled" duration-ms="37699" started-at="2015-09-09T23:25:11Z" finished-at="2015-09-09T23:25:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUntitled -->
+      </class> <!-- ru.st.selenium.RemoveDisctiptionFilm -->
+    </test> <!-- Test1 -->
+  </suite> <!-- Tests -->
 </testng-results>

@@ -1,11 +1,15 @@
 package ru.st.selenium;
 import static org.testng.AssertJUnit.assertEquals;
+
+import java.util.concurrent.TimeUnit;
+
 import org.testng.*;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeTest;
@@ -26,8 +30,10 @@ import com.thoughtworks.selenium.webdriven.SeleneseCommand;
 public class RemoveDisctiptionFilm extends CreateDiscriptionFilmtest{	
 		@Test
 		public void testUntitled(){
+			WebDriver driver = new FirefoxDriver();
+			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+			driver.get(baseUrl + "/php4dvd/");
 			
-			driver.get(baseUrl + "/php4dvd/");	    
 			
 		    WebElement user = driver.findElement(By.id("username"));
 		    user.sendKeys("admin");

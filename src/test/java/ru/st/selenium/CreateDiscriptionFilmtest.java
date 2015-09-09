@@ -32,8 +32,9 @@ public class CreateDiscriptionFilmtest extends TestBase{
 	@Test
 	public void testUntitled(){
 				
-		driver.get(baseUrl + "/php4dvd/");	    
-			
+		driver.get(baseUrl + "/php4dvd/");
+		WebDriverWait wait_user = new WebDriverWait(driver, 30);
+		WebElement wait_user_input = wait_user.until(ExpectedConditions.presenceOfElementLocated(By.id("username")));
 	    WebElement user = driver.findElement(By.id("username"));
 	    user.sendKeys("admin");
 	    WebElement pass = driver.findElement(By.name("password"));
