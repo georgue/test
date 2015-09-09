@@ -34,7 +34,7 @@ public class CreateDiscriptionFilmWithOutYeartest extends CreateDiscriptionFilmt
 	
 	
 	WebElement title_Input = driver.findElement(By.xpath("//form[@id=\"updateform\"]/*/*/tr[2]/td[2]/input[1]"));
-	title_Input.sendKeys("Терминатор");
+	title_Input.sendKeys("Г’ГҐГ°Г¬ГЁГ­Г ГІГ®Г°");
 	
 
 	WebElement seen_No_Checkbox = driver.findElement(By.xpath("//form[@id=\"updateform\"]/*/*/tr[9]/*[2]/input[@id=\"seen_no\"]"));
@@ -48,8 +48,6 @@ public class CreateDiscriptionFilmWithOutYeartest extends CreateDiscriptionFilmt
 	
 	
 	assertEquals(str, "This field is required");
-	WebDriverFactory.dismissAll();
-
 		}
 	}
 
