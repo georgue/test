@@ -72,7 +72,7 @@ public class RemoveDisctiptionFilm extends CreateDiscriptionFilmtest{
 			assertEquals(str, "No movies where found.");
 			
 			
-			
+			assert
 			
 			
 			
