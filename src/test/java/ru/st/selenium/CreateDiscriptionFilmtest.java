@@ -71,7 +71,7 @@ public class CreateDiscriptionFilmtest extends TestBase{
 		btn_remove.click();
 		Alert alert = driver.switchTo().alert();
 		alert.accept();	
-		assert
+		
 		
 		
 				
