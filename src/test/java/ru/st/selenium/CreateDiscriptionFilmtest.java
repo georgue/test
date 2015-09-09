@@ -70,7 +70,8 @@ public class CreateDiscriptionFilmtest extends TestBase{
 		WebElement btn_remove = driver.findElement(By.xpath("/html/body/div/div/div/section/nav/ul/li[4]/div/div/a"));
 		btn_remove.click();
 		Alert alert = driver.switchTo().alert();
-		alert.accept();		
+		alert.accept();	
+		assert
 		
 		
 				

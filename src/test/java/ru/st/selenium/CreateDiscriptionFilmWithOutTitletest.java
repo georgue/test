@@ -55,6 +55,7 @@ public class CreateDiscriptionFilmWithOutTitletest extends CreateDiscriptionFilm
 	
 	
 	assertEquals(str, "This field is required");
+	assert
 		}
 	}
 
