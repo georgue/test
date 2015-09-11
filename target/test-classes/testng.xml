@@ -3,12 +3,16 @@
 <suite name="Tests" verbose="4" data-provider-thread-count="1">
 	<test name="Test1">
 		<parameter name="path" value="/"/>
-		<classes>		    
-		    <class name="ru.st.selenium.CreateDiscriptionFilmtest"></class>
-		    <class name="ru.st.selenium.CreateDiscriptionFilmWithOutTitletest"></class>
-		    <class name="ru.st.selenium.CreateDiscriptionFilmWithOutYeartest"></class>
+		<classes>
+					<!-- homework3  -->    
+		    <class name="ru.st.selenium.CreateDiscriptionFilmtest"></class>		    
+		   <class name="ru.st.selenium.CreateDiscriptionFilmWithOutTitletest"></class>		    
+		    <class name="ru.st.selenium.CreateDiscriptionFilmWithOutYeartest"></class>		    
 		    <class name="ru.st.selenium.RemoveDisctiptionFilm"></class>
 		    
+		    <!-- homework4  -->
+		    <class name="ru.st.selenium.searchsucsessfilmresult"></class> 
+		    <class name="ru.st.selenium.searchNothingtest"></class>
 		</classes>
 	</test>  
 </suite>

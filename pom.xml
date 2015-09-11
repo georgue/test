@@ -77,7 +77,7 @@
       </activation>
     </profile>
     <profile>
-      <id>chrome_local</id>
+      <id>chrome_44</id>
       <properties>
         <env>chrome_local</env>
         <user.username></user.username>
@@ -90,7 +90,7 @@
       </properties>
     </profile>
     <profile>
-      <id>chrome</id>
+      <id>chrome_76</id>
       <properties>
         <env>test</env>
         <user.username></user.username>

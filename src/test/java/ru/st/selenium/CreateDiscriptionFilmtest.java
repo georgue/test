@@ -33,14 +33,16 @@ public class CreateDiscriptionFilmtest extends TestBase{
 	public void testUntitled(){
 				
 		driver.get(baseUrl + "/php4dvd/");
-		WebDriverWait wait_user = new WebDriverWait(driver, 30);
-		WebElement wait_user_input = wait_user.until(ExpectedConditions.presenceOfElementLocated(By.id("username")));
-	    WebElement user = driver.findElement(By.id("username"));
-	    user.sendKeys("admin");
-	    WebElement pass = driver.findElement(By.name("password"));
-	    pass.sendKeys("admin");
-	    WebElement submit = driver.findElement(By.name("submit"));
-	    submit.click();
+		WebDriverWait wait = new WebDriverWait(driver, 30);
+		WebElement wait_user = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("username")));
+		wait_user.sendKeys("admin");
+	
+	
+		WebElement wait_pass = wait.until(ExpectedConditions.presenceOfElementLocated(By.name("password")));			
+		wait_pass.sendKeys("admin");
+		
+		WebElement wait_submit = wait.until(ExpectedConditions.presenceOfElementLocated(By.name("submit")));		    
+	    wait_submit.click();
 	    
 		
 		WebElement add_movie_buttom = driver.findElement(By.xpath("//div[@id=\"content\"]/*/*/*[2]/*/*/*/a[@href]"));
