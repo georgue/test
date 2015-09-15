@@ -60,7 +60,7 @@ public class searchsucsessfilmresult extends TestBase {
 			
 			try {
 			WebDriverWait wait3 = new WebDriverWait(driver, 15, 3000);
-			WebElement findCreateDiscription = wait3.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(), \"Большой куш\")]")));
+			WebElement findCreateDiscription = wait3.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(), \"No movies where found.\")]")));
 			WebElement elem_search = driver.findElement(By.id("q")); 
 		   
 		    elem_search.sendKeys("1999", Keys.ENTER);
@@ -69,7 +69,7 @@ public class searchsucsessfilmresult extends TestBase {
 			// String str = findCreateDiscription.getAttribute("innerHTML");
 			
 			String str = findCreateDiscription.getText();
-			assertEquals(str, "Большой куш");
+			assertEquals(str, "0");
 			}
 			catch(Exception e){}
 			
