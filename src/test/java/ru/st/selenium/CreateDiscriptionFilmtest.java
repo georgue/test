@@ -33,7 +33,7 @@ public class CreateDiscriptionFilmtest extends TestBase{
 	public void testUntitled(){
 				
 		driver.get(baseUrl + "/php4dvd/");
-		WebDriverWait wait = new WebDriverWait(driver, 30);
+		WebDriverWait wait = new WebDriverWait(driver, 10);
 		WebElement wait_user = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("username")));
 		wait_user.sendKeys("admin");
 	

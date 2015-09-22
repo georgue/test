@@ -15,6 +15,7 @@
       <class name="ru.st.selenium.searchsucsessfilmresult">
         <methods>
           <include name="init"/>
+          <include name="testUntitled"/>
         </methods>
       </class> <!-- ru.st.selenium.searchsucsessfilmresult -->
       <class name="ru.st.selenium.CreateDiscriptionFilmtest">
@@ -25,16 +26,19 @@
       <class name="ru.st.selenium.searchNothingtest">
         <methods>
           <include name="init"/>
+          <include name="testUntitled"/>
         </methods>
       </class> <!-- ru.st.selenium.searchNothingtest -->
       <class name="ru.st.selenium.RemoveDisctiptionFilm">
         <methods>
           <include name="init"/>
+          <include name="testUntitled"/>
         </methods>
       </class> <!-- ru.st.selenium.RemoveDisctiptionFilm -->
       <class name="ru.st.selenium.CreateDiscriptionFilmWithOutTitletest">
         <methods>
           <include name="init"/>
+          <include name="testUntitled"/>
         </methods>
       </class> <!-- ru.st.selenium.CreateDiscriptionFilmWithOutTitletest -->
     </classes>

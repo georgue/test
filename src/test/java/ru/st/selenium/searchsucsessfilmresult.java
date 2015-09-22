@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 import static org.testng.AssertJUnit.assertEquals;
 import ru.st.selenium.pages.TestBase;
 
-public class searchsucsessfilmresult extends TestBase {
+public class searchsucsessfilmresult extends logintest {
 	
 		/**
 		 * 
@@ -22,8 +22,8 @@ public class searchsucsessfilmresult extends TestBase {
 					
 			driver.get(baseUrl + "/php4dvd/");
 			
-			try{
-				WebDriverWait wait = new WebDriverWait(driver, 10, 500);
+			 // login
+				WebDriverWait wait = new WebDriverWait(driver, 30, 2000);
 			WebElement wait_user = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("username")));
 			wait_user.sendKeys("admin");
 			
@@ -32,35 +32,33 @@ public class searchsucsessfilmresult extends TestBase {
 		    
 		    WebElement submit = wait.until(ExpectedConditions.presenceOfElementLocated(By.name("submit")));		    
 		    submit.click();
-			}
-			catch(Exception e){}
+									
 			
-			driver.get("http://localhost//php4dvd/?go=add");
+		    WebElement find_no_movie = driver.findElement(By.xpath("//div[contains(text(), \"No movies where found.\")]"));
+			Boolean wait_no_movie = wait.until(ExpectedConditions.stalenessOf(find_no_movie));
 			
-			
-			try {
-				WebDriverWait wait2 = new WebDriverWait(driver, 15, 500);
-			WebElement title_Input = wait2.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//form[@id=\"updateform\"]/*/*/tr[2]/td[2]/input[1]"))); 
+			//create film 
+				WebDriverWait wait2 = new WebDriverWait(driver, 25, 2000);
+			WebElement title_Input = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//form[@id=\"updateform\"]/*/*/tr[2]/td[2]/input[1]"))); 
 			title_Input.sendKeys("Большой куш");
 			
 			
-			WebElement year_Input = wait2.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//form[@id=\"updateform\"]/*/*/tr[4]/td[2]/input[1]")));
+			WebElement year_Input = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//form[@id=\"updateform\"]/*/*/tr[4]/td[2]/input[1]")));
 			year_Input.sendKeys("1999"); 
 			
 			 
-			WebElement seen_No_Checkbox = wait2.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//form[@id=\"updateform\"]/*/*/tr[9]/*[2]/input[@id=\"seen_no\"]")));
+			WebElement seen_No_Checkbox = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//form[@id=\"updateform\"]/*/*/tr[9]/*[2]/input[@id=\"seen_no\"]")));
 			seen_No_Checkbox.click();
 			
 			seen_No_Checkbox.submit();
-			}
-			catch(Exception e){}
+			
 			
 			
 			driver.get(baseUrl + "/php4dvd/");
 			
-			try {
-			WebDriverWait wait3 = new WebDriverWait(driver, 15, 3000);
-			WebElement findCreateDiscription = wait3.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(), \"No movies where found.\")]")));
+			
+			//WebDriverWait wait3 = new WebDriverWait(driver, 15, 2000);
+			WebElement findCreateDiscription = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(), \"No movies where found.\")]"))); // waiting element "No movie where found"
 			WebElement elem_search = driver.findElement(By.id("q")); 
 		   
 		    elem_search.sendKeys("1999", Keys.ENTER);
@@ -68,22 +66,21 @@ public class searchsucsessfilmresult extends TestBase {
 			// String str = findCreateDiscription.getAttribute("text");
 			// String str = findCreateDiscription.getAttribute("innerHTML");
 			
-			String str = findCreateDiscription.getText();
-			assertEquals(str, "0");
-			}
-			catch(Exception e){}
+			//String str = findCreateDiscription.getText();
+			//assertEquals(str, "0");
 			
-			try {
-				WebDriverWait wait4 = new WebDriverWait(driver, 10, 2000);
-				WebElement html = wait4.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html")));
+			
+			
+			
+				//WebDriverWait wait4 = new WebDriverWait(driver, 10, 2000);
+				WebElement html = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html")));
 				
 				WebDriverWait wait5 = new WebDriverWait(driver, 10, 1000);
-			WebElement btn = wait5.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[contains(text(), \"Большой куш\")]")));	
+			WebElement btn = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[contains(text(), \"Большой куш\")]")));	
 			btn.click();
-			WebElement remove_btn = wait5.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div/div/div/section/nav/ul/li[4]/div/div/a")));
+			WebElement remove_btn = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div/div/div/section/nav/ul/li[4]/div/div/a")));
 			remove_btn.click();
-			}
-			catch(Exception e){}
+			
 			Alert arelt = (new WebDriverWait(driver, 20)).until(ExpectedConditions.alertIsPresent());
 			Alert alert = driver.switchTo().alert();
 			alert.accept();	

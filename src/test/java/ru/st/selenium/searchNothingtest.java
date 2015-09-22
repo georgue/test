@@ -13,13 +13,13 @@ import org.testng.annotations.Test;
 
 import ru.st.selenium.pages.TestBase;
 
-public class searchNothingtest extends TestBase  {
+public class searchNothingtest extends logintest  {
 	
 	@Test
 	public void testUntitled() {
 		driver.get(baseUrl + "/php4dvd/");
-		try{
-		WebDriverWait wait = new WebDriverWait(driver, 7, 2000);
+		
+		WebDriverWait wait = new WebDriverWait(driver, 10, 5000);
 		
 			
 			WebElement wait_user = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("username")));
@@ -35,13 +35,13 @@ public class searchNothingtest extends TestBase  {
 			WebElement wait_saerch = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("q")));
 			wait_saerch.sendKeys("Мама", Keys.ENTER);
 			
-			WebDriverWait wait2 = new WebDriverWait(driver, 5, 1000);
-			WebElement wait_nothing = wait2.until(ExpectedConditions.presenceOfElementLocated(By.id("//*[@id=\"results\"]/div[1]")));
+			WebDriverWait wait2 = new WebDriverWait(driver, 20, 10000);
+			WebElement wait_nothing = wait2.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(), \"No movies where found.\")]")));
+						
 			String str = wait_nothing.getText();
 			
 			assertEquals(str, "No movies where found.");
-	}
-	catch(Exception e){}
+	
 	}
 
 }

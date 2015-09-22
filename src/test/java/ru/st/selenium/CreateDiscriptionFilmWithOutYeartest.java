@@ -21,12 +21,12 @@ import ru.stqa.selenium.factory.WebDriverFactory;
 
 
 
-public class CreateDiscriptionFilmWithOutYeartest extends TestBase{
+public class CreateDiscriptionFilmWithOutYeartest extends logintest{
 	@Test
 	public void testUntitled(){
 		driver.get(baseUrl + "/php4dvd/");
-		try{
-		WebDriverWait wait = new WebDriverWait(driver, 30, 500);
+		
+		WebDriverWait wait = new WebDriverWait(driver, 15, 500);
 		WebElement wait_user = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("username")));
 		wait_user.sendKeys("admin");
 	
@@ -36,11 +36,10 @@ public class CreateDiscriptionFilmWithOutYeartest extends TestBase{
 		
 		WebElement wait_submit = wait.until(ExpectedConditions.elementToBeClickable(By.name("submit")));		    
 	    wait_submit.click();
-		}
-		catch(Exception e){}
 		
-		try{    
-		WebDriverWait wait = new WebDriverWait(driver, 30, 500);
+		
+		    
+		
 	WebElement add_movie_buttom = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id=\"content\"]/*/*/*[2]/*/*/*/a[@href]")));
 	add_movie_buttom.click();
 	
@@ -51,13 +50,9 @@ public class CreateDiscriptionFilmWithOutYeartest extends TestBase{
 	
 
 	WebElement seen_No_Checkbox = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//img[@alt=\"Save\"]")));
-	seen_No_Checkbox.click();
-	seen_No_Checkbox.submit();
-	
-		}
-		catch(Exception e){}
-		try{    
-			WebDriverWait wait = new WebDriverWait(driver, 30, 2000);
+	seen_No_Checkbox.click();	
+		    
+			
 			
 			
 	WebElement findtext = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//label[@for=\"year\"]")));
@@ -66,8 +61,8 @@ public class CreateDiscriptionFilmWithOutYeartest extends TestBase{
 	System.out.println(str);
 	assertEquals(str, "This field is required");
 
-		}
-		catch(TimeoutException e){}
+		
+		
 
 
 		}
