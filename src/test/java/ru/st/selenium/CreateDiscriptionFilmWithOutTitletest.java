@@ -17,19 +17,17 @@ import org.testng.annotations.Test;
 
 //import ru.stqa.selenium.factory.WebDriverFactory;
 
-public class CreateDiscriptionFilmWithOutTitletest extends logintest{
+public class CreateDiscriptionFilmWithOutTitletest extends TestBase{
 	@Test
 	public void testUntitled() {		
 		
-		driver.get(baseUrl + "/php4dvd/");
-		
-		
-			WebDriverWait wait = new WebDriverWait(driver, 10, 2000);
+		//driver.get(baseUrl + "/php4dvd/");		
+			WebDriverWait wait = new WebDriverWait(driver, 40);			
 			WebElement wait_user = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("username")));
 			wait_user.sendKeys("admin");
 		
 		
-			WebElement wait_pass = wait.until(ExpectedConditions.presenceOfElementLocated(By.name("password")));			
+			WebElement wait_pass = wait.until(ExpectedConditions.elementToBeClickable(By.name("password")));			
 			wait_pass.sendKeys("admin");
 			
 			WebElement wait_submit = wait.until(ExpectedConditions.elementToBeClickable(By.name("submit")));		    
@@ -37,29 +35,30 @@ public class CreateDiscriptionFilmWithOutTitletest extends logintest{
 		
 		
 		
-		WebDriverWait wait1 = new WebDriverWait(driver, 30, 2000);
-	WebElement add_movie_buttom = wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id=\"content\"]/*/*/*[2]/*/*/*/a[@href]")));
+		//WebDriverWait wait1 = new WebDriverWait(driver, 30, 2000);
+	WebElement add_movie_buttom = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id=\"content\"]/*/*/*[2]/*/*/*/a[@href]")));
 	add_movie_buttom.click();
 	
 	
-	WebElement title_Input = wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//form[@id=\"updateform\"]/*/*/tr[2]/td[2]/input[1]")));
+	WebElement title_Input = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//form[@id=\"updateform\"]/*/*/tr[2]/td[2]/input[1]")));
 	title_Input.sendKeys("");
 	
 	
-	WebElement year_Input = wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//form[@id=\"updateform\"]/*/*/tr[4]/td[2]/input[1]")));
+	WebElement year_Input = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//form[@id=\"updateform\"]/*/*/tr[4]/td[2]/input[1]")));
 	year_Input.sendKeys("2014");
 	
 	 
-	WebElement seen_No_Checkbox = wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//form[@id=\"updateform\"]/*/*/tr[9]/*[2]/input[@id=\"seen_no\"]")));
+	WebElement seen_No_Checkbox = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//form[@id=\"updateform\"]/*/*/tr[9]/*[2]/input[@id=\"seen_no\"]")));
 	seen_No_Checkbox.click();
 	
 	seen_No_Checkbox.submit();
 	
-	WebElement findtext = wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"updateform\"]/table/tbody/tr[2]/td[2]/label")));
+	WebElement findtext = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"updateform\"]/table/tbody/tr[2]/td[2]/label")));
 	String str = findtext.getText();
 	
 	
 	assertEquals(str, "This field is required");
+	driver.get("http://localhost/php4dvd/?logout");
 	
 		}
 	}

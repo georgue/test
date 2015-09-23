@@ -35,12 +35,14 @@ public class searchNothingtest extends logintest  {
 			WebElement wait_saerch = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("q")));
 			wait_saerch.sendKeys("Мама", Keys.ENTER);
 			
-			WebDriverWait wait2 = new WebDriverWait(driver, 20, 10000);
+			WebDriverWait wait2 = new WebDriverWait(driver, 10, 5000);
 			WebElement wait_nothing = wait2.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(), \"No movies where found.\")]")));
 						
 			String str = wait_nothing.getText();
 			
 			assertEquals(str, "No movies where found.");
+			
+			driver.get("http://localhost/php4dvd/?logout");
 	
 	}
 

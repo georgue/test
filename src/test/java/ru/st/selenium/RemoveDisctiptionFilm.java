@@ -74,7 +74,7 @@ public class RemoveDisctiptionFilm extends logintest{
 
 			assertEquals(str, "No movies where found.");
 			
-			
+			driver.get("http://localhost/php4dvd/?logout");
 			
 			
 		}

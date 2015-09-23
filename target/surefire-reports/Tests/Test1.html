@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test1</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/5/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>5/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Sep 22 22:09:37 GMT+03:00 2015</td>
+<td>Started on:</td><td>Thu Sep 24 00:42:22 GMT+03:00 2015</td>
 </tr>
-<tr><td>Total time:</td><td>218 seconds (218991 ms)</td>
+<tr><td>Total time:</td><td>74 seconds (74500 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,331 +75,24 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='ru.st.selenium.CreateDiscriptionFilmWithOutTitletest.testUntitled()'><b>testUntitled</b><br>Test class: ru.st.selenium.CreateDiscriptionFilmWithOutTitletest</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Timed out after 10 seconds waiting for presence of element located by: By.id: username
-Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
-System info: host: &apos;ff-f&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_45&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.3, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: de00c5b0-4212-4664-9cd8-5b8cf4a792df
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
-	at ru.st.selenium.CreateDiscriptionFilmWithOutTitletest.testUntitled(CreateDiscriptionFilmWithOutTitletest.java:28)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;username&quot;}
-Command duration or timeout: 30.10 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
-System info: host: &apos;ff-f&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_45&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.3, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: de00c5b0-4212-4664-9cd8-5b8cf4a792df
-*** Element info: {Using=id, value=username}
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:389)
-	at org.openqa.selenium.By$ById.findElement(By.java:215)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:340)
-	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:861)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:181)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:178)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
-	... 28 more
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;username&quot;}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
-System info: host: &apos;ff-f&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_45&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/goga/AppData/Local/Temp/anonymous2388488960150065136webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10667)
-	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/goga/AppData/Local/Temp/anonymous2388488960150065136webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:623)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1579280783", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1579280783'><pre>org.openqa.selenium.TimeoutException: Timed out after 10 seconds waiting for presence of element located by: By.id: username
-Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
-System info: host: &apos;ff-f&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_45&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.3, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: de00c5b0-4212-4664-9cd8-5b8cf4a792df
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
-	at ru.st.selenium.CreateDiscriptionFilmWithOutTitletest.testUntitled(CreateDiscriptionFilmWithOutTitletest.java:28)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:771)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
-	at org.testng.TestNG.run(TestNG.java:1032)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:217)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:92)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;username&quot;}
-Command duration or timeout: 30.10 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
-System info: host: &apos;ff-f&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_45&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.3, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: de00c5b0-4212-4664-9cd8-5b8cf4a792df
-*** Element info: {Using=id, value=username}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:389)
-	at org.openqa.selenium.By$ById.findElement(By.java:215)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:340)
-	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:861)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:181)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:178)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
-	... 28 more
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;username&quot;}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
-System info: host: &apos;ff-f&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_45&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/goga/AppData/Local/Temp/anonymous2388488960150065136webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10667)
-	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/goga/AppData/Local/Temp/anonymous2388488960150065136webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:623)
-</pre></div></td>
-<td>30</td>
-<td>ru.st.selenium.CreateDiscriptionFilmWithOutTitletest@42d3bd8b</td></tr>
-<tr>
-<td title='ru.st.selenium.CreateDiscriptionFilmWithOutYeartest.testUntitled()'><b>testUntitled</b><br>Test class: ru.st.selenium.CreateDiscriptionFilmWithOutYeartest</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Element was not in a form so couldn&apos;t submit
-Command duration or timeout: 30.06 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
-System info: host: &apos;ff-f&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_45&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.3, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: de00c5b0-4212-4664-9cd8-5b8cf4a792df
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:273)
-	at org.openqa.selenium.remote.RemoteWebElement.submit(RemoteWebElement.java:88)
-	at ru.st.selenium.CreateDiscriptionFilmWithOutYeartest.testUntitled(CreateDiscriptionFilmWithOutYeartest.java:55)
-Caused by: org.openqa.selenium.NoSuchElementException: Element was not in a form so couldn&apos;t submit
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
-System info: host: &apos;ff-f&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_45&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.WebElement.submitElement(file:///C:/Users/goga/AppData/Local/Temp/anonymous2388488960150065136webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12147)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/goga/AppData/Local/Temp/anonymous2388488960150065136webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12643)
-	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/goga/AppData/Local/Temp/anonymous2388488960150065136webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:623)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace823575379", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace823575379'><pre>org.openqa.selenium.NoSuchElementException: Element was not in a form so couldn&apos;t submit
-Command duration or timeout: 30.06 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
-System info: host: &apos;ff-f&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_45&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.3, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: de00c5b0-4212-4664-9cd8-5b8cf4a792df
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:273)
-	at org.openqa.selenium.remote.RemoteWebElement.submit(RemoteWebElement.java:88)
-	at ru.st.selenium.CreateDiscriptionFilmWithOutYeartest.testUntitled(CreateDiscriptionFilmWithOutYeartest.java:55)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:771)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
-	at org.testng.TestNG.run(TestNG.java:1032)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:217)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:92)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-Caused by: org.openqa.selenium.NoSuchElementException: Element was not in a form so couldn&apos;t submit
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
-System info: host: &apos;ff-f&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_45&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.WebElement.submitElement(file:///C:/Users/goga/AppData/Local/Temp/anonymous2388488960150065136webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12147)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/goga/AppData/Local/Temp/anonymous2388488960150065136webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12643)
-	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/goga/AppData/Local/Temp/anonymous2388488960150065136webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:623)
-</pre></div></td>
-<td>61</td>
-<td>ru.st.selenium.CreateDiscriptionFilmWithOutYeartest@6bf256fa</td></tr>
-<tr>
-<td title='ru.st.selenium.RemoveDisctiptionFilm.testUntitled()'><b>testUntitled</b><br>Test class: ru.st.selenium.RemoveDisctiptionFilm</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Timed out after 10 seconds waiting for presence of element located by: By.id: username
-Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
-System info: host: &apos;ff-f&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_45&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.3, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: de00c5b0-4212-4664-9cd8-5b8cf4a792df
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
-	at ru.st.selenium.RemoveDisctiptionFilm.testUntitled(RemoveDisctiptionFilm.java:37)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;username&quot;}
-Command duration or timeout: 30.10 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
-System info: host: &apos;ff-f&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_45&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.3, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: de00c5b0-4212-4664-9cd8-5b8cf4a792df
-*** Element info: {Using=id, value=username}
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:389)
-	at org.openqa.selenium.By$ById.findElement(By.java:215)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:340)
-	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:861)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:181)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:178)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
-	... 28 more
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;username&quot;}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
-System info: host: &apos;ff-f&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_45&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/goga/AppData/Local/Temp/anonymous2388488960150065136webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10667)
-	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/goga/AppData/Local/Temp/anonymous2388488960150065136webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:623)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace144040807", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace144040807'><pre>org.openqa.selenium.TimeoutException: Timed out after 10 seconds waiting for presence of element located by: By.id: username
-Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
-System info: host: &apos;ff-f&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_45&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.3, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: de00c5b0-4212-4664-9cd8-5b8cf4a792df
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
-	at ru.st.selenium.RemoveDisctiptionFilm.testUntitled(RemoveDisctiptionFilm.java:37)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:771)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
-	at org.testng.TestNG.run(TestNG.java:1032)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:217)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:92)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;username&quot;}
-Command duration or timeout: 30.10 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
-System info: host: &apos;ff-f&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_45&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.3, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: de00c5b0-4212-4664-9cd8-5b8cf4a792df
-*** Element info: {Using=id, value=username}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:389)
-	at org.openqa.selenium.By$ById.findElement(By.java:215)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:340)
-	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:861)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:181)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:178)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
-	... 28 more
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;username&quot;}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
-System info: host: &apos;ff-f&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_45&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/goga/AppData/Local/Temp/anonymous2388488960150065136webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10667)
-	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/goga/AppData/Local/Temp/anonymous2388488960150065136webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:623)
-</pre></div></td>
-<td>30</td>
-<td>ru.st.selenium.RemoveDisctiptionFilm@dfd3711</td></tr>
-<tr>
 <td title='ru.st.selenium.searchsucsessfilmresult.testUntitled()'><b>testUntitled</b><br>Test class: ru.st.selenium.searchsucsessfilmresult</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Timed out after 15 seconds waiting for presence of element located by: By.id: username
+<td><div><pre>org.openqa.selenium.TimeoutException: Timed out after 30 seconds waiting for presence of element located by: By.id: username
 Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
 System info: host: &apos;ff-f&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_45&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.3, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: de00c5b0-4212-4664-9cd8-5b8cf4a792df
+Session ID: 3cff554a-e015-4c82-9d9c-09ef8497ab7b
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
 	at ru.st.selenium.searchsucsessfilmresult.testUntitled(searchsucsessfilmresult.java:27)
 Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;username&quot;}
-Command duration or timeout: 30.11 seconds
+Command duration or timeout: 30.10 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
 System info: host: &apos;ff-f&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_45&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.3, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: de00c5b0-4212-4664-9cd8-5b8cf4a792df
+Session ID: 3cff554a-e015-4c82-9d9c-09ef8497ab7b
 *** Element info: {Using=id, value=username}
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
@@ -419,15 +112,15 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
 System info: host: &apos;ff-f&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_45&apos;
 Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/goga/AppData/Local/Temp/anonymous2388488960150065136webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10667)
-	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/goga/AppData/Local/Temp/anonymous2388488960150065136webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:623)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1241569743", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1241569743'><pre>org.openqa.selenium.TimeoutException: Timed out after 15 seconds waiting for presence of element located by: By.id: username
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/goga/AppData/Local/Temp/anonymous1484087377129253973webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10667)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/goga/AppData/Local/Temp/anonymous1484087377129253973webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:623)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1482246673", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1482246673'><pre>org.openqa.selenium.TimeoutException: Timed out after 30 seconds waiting for presence of element located by: By.id: username
 Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
 System info: host: &apos;ff-f&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_45&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.3, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: de00c5b0-4212-4664-9cd8-5b8cf4a792df
+Session ID: 3cff554a-e015-4c82-9d9c-09ef8497ab7b
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
 	at ru.st.selenium.searchsucsessfilmresult.testUntitled(searchsucsessfilmresult.java:27)
@@ -459,13 +152,13 @@ Session ID: de00c5b0-4212-4664-9cd8-5b8cf4a792df
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
 Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;username&quot;}
-Command duration or timeout: 30.11 seconds
+Command duration or timeout: 30.10 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
 System info: host: &apos;ff-f&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_45&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.3, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: de00c5b0-4212-4664-9cd8-5b8cf4a792df
+Session ID: 3cff554a-e015-4c82-9d9c-09ef8497ab7b
 *** Element info: {Using=id, value=username}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -489,124 +182,11 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
 System info: host: &apos;ff-f&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_45&apos;
 Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/goga/AppData/Local/Temp/anonymous2388488960150065136webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10667)
-	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/goga/AppData/Local/Temp/anonymous2388488960150065136webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:623)
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/goga/AppData/Local/Temp/anonymous1484087377129253973webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10667)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/goga/AppData/Local/Temp/anonymous1484087377129253973webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:623)
 </pre></div></td>
 <td>30</td>
-<td>ru.st.selenium.searchsucsessfilmresult@73f792cf</td></tr>
-<tr>
-<td title='ru.st.selenium.searchNothingtest.testUntitled()'><b>testUntitled</b><br>Test class: ru.st.selenium.searchNothingtest</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Timed out after 10 seconds waiting for presence of element located by: By.id: username
-Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
-System info: host: &apos;ff-f&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_45&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.3, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: de00c5b0-4212-4664-9cd8-5b8cf4a792df
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
-	at ru.st.selenium.searchNothingtest.testUntitled(searchNothingtest.java:25)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;username&quot;}
-Command duration or timeout: 30.02 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
-System info: host: &apos;ff-f&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_45&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.3, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: de00c5b0-4212-4664-9cd8-5b8cf4a792df
-*** Element info: {Using=id, value=username}
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:389)
-	at org.openqa.selenium.By$ById.findElement(By.java:215)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:340)
-	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:861)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:181)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:178)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
-	... 28 more
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;username&quot;}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
-System info: host: &apos;ff-f&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_45&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/goga/AppData/Local/Temp/anonymous2388488960150065136webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10667)
-	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/goga/AppData/Local/Temp/anonymous2388488960150065136webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:623)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace551016187", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace551016187'><pre>org.openqa.selenium.TimeoutException: Timed out after 10 seconds waiting for presence of element located by: By.id: username
-Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
-System info: host: &apos;ff-f&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_45&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.3, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: de00c5b0-4212-4664-9cd8-5b8cf4a792df
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
-	at ru.st.selenium.searchNothingtest.testUntitled(searchNothingtest.java:25)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:771)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
-	at org.testng.TestNG.run(TestNG.java:1032)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:217)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:92)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;username&quot;}
-Command duration or timeout: 30.02 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
-System info: host: &apos;ff-f&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_45&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.3, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: de00c5b0-4212-4664-9cd8-5b8cf4a792df
-*** Element info: {Using=id, value=username}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:389)
-	at org.openqa.selenium.By$ById.findElement(By.java:215)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:340)
-	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:861)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:181)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:178)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
-	... 28 more
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;username&quot;}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
-System info: host: &apos;ff-f&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_45&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/goga/AppData/Local/Temp/anonymous2388488960150065136webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10667)
-	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/goga/AppData/Local/Temp/anonymous2388488960150065136webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:623)
-</pre></div></td>
-<td>30</td>
-<td>ru.st.selenium.searchNothingtest@38082d64</td></tr>
+<td>ru.st.selenium.searchsucsessfilmresult@38082d64</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -618,8 +198,28 @@ Driver info: driver.version: unknown
 <tr>
 <td title='ru.st.selenium.CreateDiscriptionFilmtest.testUntitled()'><b>testUntitled</b><br>Test class: ru.st.selenium.CreateDiscriptionFilmtest</td>
 <td></td>
-<td>5</td>
+<td>6</td>
 <td>ru.st.selenium.CreateDiscriptionFilmtest@2ed94a8b</td></tr>
+<tr>
+<td title='ru.st.selenium.CreateDiscriptionFilmWithOutTitletest.testUntitled()'><b>testUntitled</b><br>Test class: ru.st.selenium.CreateDiscriptionFilmWithOutTitletest</td>
+<td></td>
+<td>2</td>
+<td>ru.st.selenium.CreateDiscriptionFilmWithOutTitletest@42d3bd8b</td></tr>
+<tr>
+<td title='ru.st.selenium.CreateDiscriptionFilmWithOutYeartest.testUntitled()'><b>testUntitled</b><br>Test class: ru.st.selenium.CreateDiscriptionFilmWithOutYeartest</td>
+<td></td>
+<td>2</td>
+<td>ru.st.selenium.CreateDiscriptionFilmWithOutYeartest@6bf256fa</td></tr>
+<tr>
+<td title='ru.st.selenium.RemoveDisctiptionFilm.testUntitled()'><b>testUntitled</b><br>Test class: ru.st.selenium.RemoveDisctiptionFilm</td>
+<td></td>
+<td>3</td>
+<td>ru.st.selenium.RemoveDisctiptionFilm@dfd3711</td></tr>
+<tr>
+<td title='ru.st.selenium.searchNothingtest.testUntitled()'><b>testUntitled</b><br>Test class: ru.st.selenium.searchNothingtest</td>
+<td></td>
+<td>1</td>
+<td>ru.st.selenium.searchNothingtest@73f792cf</td></tr>
 </table><p>
 </body>
 </html>

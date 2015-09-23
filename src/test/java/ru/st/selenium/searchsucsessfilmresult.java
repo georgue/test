@@ -86,7 +86,7 @@ public class searchsucsessfilmresult extends logintest {
 			alert.accept();	
 			
 			
-			
+			driver.get("http://localhost/php4dvd/?logout");
 					
 				}
 

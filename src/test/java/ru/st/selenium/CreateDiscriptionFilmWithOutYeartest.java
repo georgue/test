@@ -60,6 +60,8 @@ public class CreateDiscriptionFilmWithOutYeartest extends logintest{
 	
 	System.out.println(str);
 	assertEquals(str, "This field is required");
+	
+	driver.get("http://localhost/php4dvd/?logout");
 
 		
 		

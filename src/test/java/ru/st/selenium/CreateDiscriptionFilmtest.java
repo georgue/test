@@ -25,15 +25,12 @@ import ru.stqa.selenium.factory.WebDriverFactory;
 
 import com.thoughtworks.selenium.webdriven.SeleneseCommand;
  
-public class CreateDiscriptionFilmtest extends TestBase{
- 
-	
-	
+public class CreateDiscriptionFilmtest extends TestBase{	
 	@Test
 	public void testUntitled(){
 				
 		driver.get(baseUrl + "/php4dvd/");
-		WebDriverWait wait = new WebDriverWait(driver, 10);
+		WebDriverWait wait = new WebDriverWait(driver, 30);
 		WebElement wait_user = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("username")));
 		wait_user.sendKeys("admin");
 	
@@ -72,7 +69,9 @@ public class CreateDiscriptionFilmtest extends TestBase{
 		WebElement btn_remove = driver.findElement(By.xpath("/html/body/div/div/div/section/nav/ul/li[4]/div/div/a"));
 		btn_remove.click();
 		Alert alert = driver.switchTo().alert();
-		alert.accept();	
+		alert.accept();
+		
+		driver.get("http://localhost/php4dvd/?logout"); 
 		
 		
 		
