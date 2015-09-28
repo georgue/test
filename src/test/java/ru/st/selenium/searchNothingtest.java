@@ -14,12 +14,13 @@ import org.testng.annotations.Test;
 import ru.st.selenium.pages.TestBase;
 
 public class searchNothingtest extends logintest  {
+	 static String str;
 	
 	@Test
 	public void testUntitled() {
 		driver.get(baseUrl + "/php4dvd/");
 		
-		WebDriverWait wait = new WebDriverWait(driver, 10, 5000);
+		WebDriverWait wait = new WebDriverWait(driver, 20, 2500);
 		
 			
 			WebElement wait_user = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("username")));
@@ -35,15 +36,31 @@ public class searchNothingtest extends logintest  {
 			WebElement wait_saerch = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("q")));
 			wait_saerch.sendKeys("Мама", Keys.ENTER);
 			
-			WebDriverWait wait2 = new WebDriverWait(driver, 10, 5000);
-			WebElement wait_nothing = wait2.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(), \"No movies where found.\")]")));
-						
-			String str = wait_nothing.getText();
+			WebElement wait_nothing = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(), \"No movies where found.\")]")));
+			String str = wait_text(wait);		
+					
+			
 			
 			assertEquals(str, "No movies where found.");
 			
-			driver.get("http://localhost/php4dvd/?logout");
+			
+			wait_saerch.clear();	
+			driver.get("http://localhost/php4dvd/?logout");	
+			}
+
+	private String wait_text(WebDriverWait wait) {		
+		
+		do{
+			WebElement str = driver.findElement(By.xpath("//div[contains(text(), \"No movies where found.\")]"));
+			str.getText();
+		}while(str == null);
+		return str;
+	}
+			
+			
+			
+			
 	
 	}
 
-}
+

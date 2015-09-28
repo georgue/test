@@ -66,7 +66,7 @@ public class CreateDiscriptionFilmtest extends TestBase{
 		String str = findCreateDiscription.getText();
 		assertEquals(str, "Терминатор (2014)");
 		
-		WebElement btn_remove = driver.findElement(By.xpath("/html/body/div/div/div/section/nav/ul/li[4]/div/div/a"));
+		WebElement btn_remove = driver.findElement(By.xpath("//*[contains(text(), \"Remove\")]"));
 		btn_remove.click();
 		Alert alert = driver.switchTo().alert();
 		alert.accept();
