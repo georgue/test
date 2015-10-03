@@ -11,6 +11,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import org.openqa.selenium.support.ui.ExpectedCondition;
@@ -20,14 +21,13 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import com.thoughtworks.selenium.webdriven.commands.IsTextPresent;
 
-import ru.st.selenium.pages.TestBase;
 import ru.stqa.selenium.factory.WebDriverFactory;
 
 import com.thoughtworks.selenium.webdriven.SeleneseCommand;
  
 public class CreateDiscriptionFilmtest extends TestBase{	
 	@Test
-	public void testUntitled(){
+	public void testUntitled() {
 				
 		driver.get(baseUrl + "/php4dvd/");
 		WebDriverWait wait = new WebDriverWait(driver, 30);
@@ -63,20 +63,40 @@ public class CreateDiscriptionFilmtest extends TestBase{
 		
 		// String str = findCreateDiscription.getAttribute("text");
 		// String str = findCreateDiscription.getAttribute("innerHTML");
-		String str = findCreateDiscription.getText();
-		assertEquals(str, "Терминатор (2014)");
+		String str = findCreateDiscription.getText();		
 		
-		WebElement btn_remove = driver.findElement(By.xpath("//*[contains(text(), \"Remove\")]"));
+		driver.get("http://localhost/php4dvd/?logout"); 
+		assertEquals(str, "Терминатор (2014)");		
+				
+			}
+	@AfterMethod
+	public void clear(){
+		
+		driver.get("http://localhost/php4dvd/");
+		WebDriverWait wait11 = new WebDriverWait(driver, 20 , 2000);
+		
+		WebElement wait_user = wait11.until(ExpectedConditions.presenceOfElementLocated(By.id("username")));
+		wait_user.sendKeys("admin");
+	
+	
+		WebElement wait_pass = wait11.until(ExpectedConditions.presenceOfElementLocated(By.name("password")));			
+		wait_pass.sendKeys("admin");
+		
+		WebElement wait_submit = wait11.until(ExpectedConditions.elementToBeClickable(By.name("submit")));		    
+	    wait_submit.click();
+		
+		WebElement film_page = wait11.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[contains(text(), \"Терминатор\")]")));
+		film_page.click();
+		
+		WebElement btn_remove = wait11.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div/div/div/section/nav/ul/li[4]/div/div/a")));
 		btn_remove.click();
 		Alert alert = driver.switchTo().alert();
 		alert.accept();
-		
-		driver.get("http://localhost/php4dvd/?logout"); 
-		
+		driver.get("http://localhost/php4dvd/?logout");
 		
 		
-				
-			}
+		
+	}
 	
 }
 

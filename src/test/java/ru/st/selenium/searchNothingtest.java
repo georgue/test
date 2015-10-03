@@ -20,13 +20,13 @@ public class searchNothingtest extends logintest  {
 	public void testUntitled() {
 		driver.get(baseUrl + "/php4dvd/");
 		
-		WebDriverWait wait = new WebDriverWait(driver, 20, 2500);
+		WebDriverWait wait = new WebDriverWait(driver, 60);
 		
 			
 			WebElement wait_user = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("username")));
 			wait_user.sendKeys("admin");
-		
-		
+			//WebElement wait_page2 = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"loginform\"]/table/tbody/tr[2]/td[2]/input")));
+			
 			WebElement wait_pass = wait.until(ExpectedConditions.presenceOfElementLocated(By.name("password")));			
 			wait_pass.sendKeys("admin");
 			
@@ -36,31 +36,26 @@ public class searchNothingtest extends logintest  {
 			WebElement wait_saerch = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("q")));
 			wait_saerch.sendKeys("Мама", Keys.ENTER);
 			
-			WebElement wait_nothing = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(), \"No movies where found.\")]")));
-			String str = wait_text(wait);		
-					
+			WebElement wait_load_page = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@id=\"container\"]/div[@id=\"wrapper\"]/div[@id=\"content\"]/section/div[@id=\"results\"]/div[@class=\"content\"]")));
 			
+			WebElement wait_nothing = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(), \"No movies where found.\")]")));
+			String str = wait_nothing.getText();	
+					
+			wait_saerch.clear();	
+			driver.get("http://localhost/php4dvd/?logout");
 			
 			assertEquals(str, "No movies where found.");
 			
 			
-			wait_saerch.clear();	
-			driver.get("http://localhost/php4dvd/?logout");	
+				
 			}
 
-	private String wait_text(WebDriverWait wait) {		
-		
-		do{
-			WebElement str = driver.findElement(By.xpath("//div[contains(text(), \"No movies where found.\")]"));
-			str.getText();
-		}while(str == null);
-		return str;
+	
 	}
 			
 			
 			
 			
 	
-	}
 
 

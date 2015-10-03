@@ -10,7 +10,9 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 import static org.testng.AssertJUnit.assertEquals;
+import static org.testng.Assert.assertNotEquals;
 import ru.st.selenium.pages.TestBase;
+
 
 public class searchsucsessfilmresult extends logintest {
 	
@@ -33,20 +35,15 @@ public class searchsucsessfilmresult extends logintest {
 		    WebElement submit = wait.until(ExpectedConditions.presenceOfElementLocated(By.name("submit")));		    
 		    submit.click();
 		    
+		   try{
+			   WebDriverWait wait2 = new WebDriverWait(driver, 10, 5000);
+		    WebElement listfilm = wait2.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class=\"title\"]")));
+		    System.out.println(listfilm);
+		   }
+		   catch(Exception e){
+		   		
 		    
-		    
-		  //search the film
-		    
-		    WebElement wait_elem_search = wait.until(ExpectedConditions.elementToBeClickable(By.id("q")));	    		    
-		    wait_elem_search.sendKeys("1999", Keys.ENTER);
-		    
-		    WebElement findCreateDiscription = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(), \"No movies where found.\")]")));						
-			String Str_no_movie = findCreateDiscription.getText();
-			
-			wait_elem_search.clear();
-			
-			
-			//create film 
+			//create film 1
 			
 			driver.get("http://localhost/php4dvd/?go=add");
 			//WebElement add_movie_btn = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"content\"]/section/nav/ul/li[1]/div/div")));
@@ -62,16 +59,45 @@ public class searchsucsessfilmresult extends logintest {
 			WebElement submit_btn = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("submit")));
 			submit_btn.click();
 			
-			//search the film again
+		   }
+		   
+			
+			// get a list film
 			driver.get("http://localhost/php4dvd/");
 			
+				// wait load film list
+			WebElement Load_films_after_search = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@id=\"container\"]/footer")));
+				// save a list film
+			WebElement listfilm = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class=\"title\"]")));
+			
+			//String Str_listfilm = listfilm.getText();			
+			
+			
+			
+			//search the film
+			driver.get("http://localhost/php4dvd/");
+			
+				// wait load film list
+			WebElement Load_films_after_search2 = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@id=\"container\"]/footer")));
+			
+				//search film
 			WebElement wait_elem_search_again = wait.until(ExpectedConditions.elementToBeClickable(By.id("q")));
 			wait_elem_search_again.sendKeys("1999", Keys.ENTER);
-		    
-		    WebElement find_film = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(), \"Ѕольшой куш\")]")));						
-			String Str_movie = find_film.getText();
 			
-			assertEquals(Str_movie, Str_no_movie, "ѕоиск сломалс€");
+			//load_page	
+			WebElement wait_load = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class=\"title\"]")));
+			
+			
+			//get a new film list
+			// подумать как получить список фильмов если есть другие фильмы < //div[@class="title"] >
+			
+			WebElement new_listfilm = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class=\"title\"]")));
+			//String Str_new_listfilm = new_listfilm.getText();
+			System.out.println(new_listfilm);
+			assertNotEquals(listfilm, new_listfilm, "поиск сломалс€");
+			driver.get("http://localhost/php4dvd/?logout");
+			
+			//assertNotEquals(Str_movie, Str_no_movie, "ѕоиск сломалс€");
 			
 			 //
 			// String str = findCreateDiscription.getAttribute("text");
@@ -81,7 +107,7 @@ public class searchsucsessfilmresult extends logintest {
 			//assertEquals(str, "0");
 			//
 			
-			driver.get("http://localhost/php4dvd/?logout");
+			
 					
 				}
 
