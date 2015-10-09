@@ -60,19 +60,7 @@ public class searchsucsessfilmresult extends logintest {
 			submit_btn.click();
 			
 		   }
-		   
-			
-			// get a list film
-			driver.get("http://localhost/php4dvd/");
-			
-				// wait load film list
-			WebElement Load_films_after_search = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@id=\"container\"]/footer")));
-				// save a list film
-			WebElement listfilm = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class=\"title\"]")));
-			
-			//String Str_listfilm = listfilm.getText();			
-			
-			
+		   			
 			
 			//search the film
 			driver.get("http://localhost/php4dvd/");
@@ -82,19 +70,23 @@ public class searchsucsessfilmresult extends logintest {
 			
 				//search film
 			WebElement wait_elem_search_again = wait.until(ExpectedConditions.elementToBeClickable(By.id("q")));
-			wait_elem_search_again.sendKeys("1999", Keys.ENTER);
+			wait_elem_search_again.sendKeys("", Keys.ENTER);
 			
-			//load_page	
-			WebElement wait_load = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class=\"title\"]")));
+			//load_element No movies where found.
+			WebElement wait_load = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div/div[@class]")));
+			
+			
+			WebElement wait_elem_search_again_ = wait.until(ExpectedConditions.elementToBeClickable(By.id("q")));
+			wait_elem_search_again.sendKeys("Ѕольшой куш", Keys.ENTER);
 			
 			
 			//get a new film list
 			// подумать как получить список фильмов если есть другие фильмы < //div[@class="title"] >
 			
-			WebElement new_listfilm = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class=\"title\"]")));
+			WebElement new_listfilm = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(),\"Ѕольшой куш\")]")));
 			//String Str_new_listfilm = new_listfilm.getText();
-			System.out.println(new_listfilm);
-			assertNotEquals(listfilm, new_listfilm, "поиск сломалс€");
+			
+			assertNotEquals(wait_load, new_listfilm, "поиск сломалс€");
 			driver.get("http://localhost/php4dvd/?logout");
 			
 			//assertNotEquals(Str_movie, Str_no_movie, "ѕоиск сломалс€");
